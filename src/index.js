@@ -6,6 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { createTheme } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
 import { red } from '@mui/material/colors';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
+import About1 from './components/about/about11';
+import Contact from './components/contact/contact';
+import Service from './components/service/service';
+import Donate from './components/donate.js/donate';
+import Volunt from './components/voulunt/volunt';
+import App2 from './app2';
 
 const theme = createTheme({
   palette: {
@@ -17,13 +24,46 @@ const theme = createTheme({
     },
   },
 });
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <App/>,
+    // errorElement:<ErrorPage/>,
+    children : [
+      {
+        path: '',
+        element : <App2/>
+      },
 
+      {
+        path: 'about',
+        element : <About1/>
+      },
+      {
+        path: 'contact',
+        element : <Contact/>
+      },
+      {
+        path: 'service',
+        element : <Service/>
+      },
+      {
+        path: 'donate',
+        element : <Donate/>
+      },
+      {
+        path: 'volunt',
+        element : <Volunt/>
+      },
+    ]
+  }
+])
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

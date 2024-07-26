@@ -16,11 +16,11 @@ export default function Ouractivity(){
     ]
     return(
         <div className="bg-blue-900 h-96 w-screen flex flex-col items-center ">
-             <h1 className="text-5xl text-center text-rose-100 mt-10  font-bold"> <VisibilityTwoTone color='secondary' fontSize="large"/>Our mission and value</h1>
-            <div className="flex justify-center gap-8 mt-32">
+             <h1 className=" text-3xl lg:text-7xl text-center text-rose-100 mt-10  font-bold"> <VisibilityTwoTone color='secondary' fontSize="large"/>Our mission and value</h1>
+            <div className="flex flex-col lg:flex-row justify-center gap-8 mt-32">
                 {our_activity_data.map((activi) =>(
                      <Card className="max-w-sm">
-                        <h5 className="text-2xl font-bold tracking-tight text-blue-900 dark:text-white">
+                        <h5 className="text-md  lg:text-2xl font-bold tracking-tight text-blue-900 dark:text-white">
                         {activi.titlee}
                         </h5>
                         <p className="font-normal text-rose-700 dark:text-gray-400">

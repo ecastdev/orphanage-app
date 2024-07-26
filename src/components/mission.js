@@ -34,17 +34,17 @@ export default function OurMission(){
         },
     ]
     return(
-        <div className="flex flex-col items-center mt-60">
-            <h1 className="text-blue-950 text-center text-5xl font-bold">
+        <div className="flex flex-col h-screen items-center mt-40 lg:mt-96">
+            <h1 className="text-blue-950 text-center text-3xl lg:text-7xl font-bold">
                 Our Activity
             </h1>
-            <div className="mt-9 grid grid-cols-3 gap-4">
+            <div className="mt-3 lg:mt-9 grid grid-cols-3 gap-9">
             {missionData.map((activi) =>(
-                     <div className="grid">
+                     <div className="grid mt-10 lg:mt-20">
                         <h1>
                             {activi.icon}
                         </h1>
-                        <h2 className="text-3xl text-blue-950 text-center">
+                        <h2 className=" text-xl lg:text-3xl text-blue-950 text-center">
                             {activi.title}
                         </h2>
                         <p className="text-sm font-light text-center">
