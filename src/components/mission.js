@@ -34,24 +34,25 @@ export default function OurMission(){
         },
     ]
     return(
-        <div className="flex flex-col h-screen items-center mt-40 lg:mt-96">
+        <div className="flex flex-col h-screen items-center h-screen mt-96 lg:mt-96">
             <h1 className="text-blue-950 text-center text-3xl lg:text-7xl font-bold">
                 Our Activity
             </h1>
-            <div className="mt-3 lg:mt-9 grid grid-cols-3 gap-9">
-            {missionData.map((activi) =>(
-                     <div className="grid mt-10 lg:mt-20">
-                        <h1>
-                            {activi.icon}
-                        </h1>
-                        <h2 className=" text-xl lg:text-3xl text-blue-950 text-center">
-                            {activi.title}
-                        </h2>
-                        <p className="text-sm font-light text-center">
-                            {activi.content}
-                        </p>
-                   </div>
-                ))}
+            <div className="mt-2 lg:mt-9 grid grid-cols-2 lg:grid-cols-3 lg:gap-9">
+                        {missionData.map((activi, index) => (
+                          <div key={index} className="grid mt-10 lg:mt-20">
+                                <h1>
+                                    {activi.icon || "Default Icon"}
+                                </h1>
+                                <h2 className="text-xl lg:text-3xl text-blue-950 text-center">
+                                    {activi.title || "Default Title"}
+                                </h2>
+                                <p className="text-sm font-light text-center">
+                                    {activi.content || "Default Content"}
+                                </p>
+                          </div>
+            ))}
+
 
             </div>
 

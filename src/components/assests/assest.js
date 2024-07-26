@@ -1,3 +1,3 @@
-// import orphanage from './orphanage.jpeg';
+import orphanage from './orphanage.jpeg';
 import logos from './lt.png'
-export  default logos;
+export default  {logos ,orphanage} ;

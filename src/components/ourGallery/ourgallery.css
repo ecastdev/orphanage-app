@@ -11,7 +11,7 @@
     height: 90%;
     position: absolute;
     inset: 0 0 0 0;
-    left: 50px;
+    /* left: 50px; */
     border-radius: 100px;
 
 
@@ -44,7 +44,7 @@
     line-height: 1.3em;
 }
 .slider .list .item .type{
-    color: #14ff72cb;
+    color: red;
 }
 .slider .list .item .button{
     display: grid;
@@ -56,7 +56,7 @@
 }
 .slider .list .item .button button{
     border: none;
-    background-color: #eee;
+    background-color: red;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
@@ -71,8 +71,8 @@
 }
 .slider .list .item .button button:nth-child(2){
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
+    border: 1px solid red;
+    color: red;
 }
 
 

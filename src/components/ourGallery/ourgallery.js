@@ -27,16 +27,16 @@ export default function OurGallery() {
     };
 
     return (
-        <div className="slider mt-60">
-            <div className="list grid flex flex-col items-center" ref={sliderListRef}>
+        <div className="slider max-w-full flex items-center lg:grid mt-60">
+            <div className="list max-w-52 grid flex flex-col items-center" ref={sliderListRef}>
                 {/* Slide items */}
                 <div className="item opacity-3">
                     <img src={orp11} alt="" className='' />
                     <div className="content">
-                        <div className="title">MAGIC SLIDER</div>
-                        <div className="type">FLOWER</div>
+                        <div className="title">Living Word of God </div>
+                        <div className="type"> Organization</div>
                         <div className="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                          Our mission is simple yet profound: to provide a safe and loving
                         </div>
                         <div className="button">
                             <button>SEE MORE</button>
@@ -46,11 +46,10 @@ export default function OurGallery() {
                 <div className="item">
                     <img src={orp22} alt="" />
                     <div className="content">
-                        <div className="title">MAGIC SLIDER</div>
-                        <div className="type">NATURE</div>
+                        <div className="title">Living Word of God n</div>
+                        <div className="type"> Based </div>
                         <div className="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                        </div>
+                            Our mission is simple yet profound: to provide a safe and loving
                         <div className="button">
                             <button>SEE MORE</button>
                         </div>
@@ -59,10 +58,10 @@ export default function OurGallery() {
                 <div className="item">
                     <img src={orp333} alt="" />
                     <div className="content">
-                        <div className="title">MAGIC SLIDER</div>
-                        <div className="type">PLANT</div>
+                        <div className="title">Living Word of God </div>
+                        <div className="type">Faith B</div>
                         <div className="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                          Our mission is simple yet profound: to provide a safe and loving.
                         </div>
                         <div className="button">
                             <button>SEE MORE</button>
@@ -72,10 +71,10 @@ export default function OurGallery() {
                 <div className="item">
                     <img src={orph444} alt="" />
                     <div className="content">
-                        <div className="title">MAGIC SLIDER</div>
-                        <div className="type">NATURE</div>
+                        <div className="title">Living Word of God </div>
+                        <div className="type">Faith Organization</div>
                         <div className="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                          Our mission is simple yet profound: to provide a safe and loving
                         </div>
                         <div className="button">
                             <button>SEE MORE</button>
@@ -109,6 +108,8 @@ export default function OurGallery() {
                     next
                 </button>
             </div>
-        </div>
+           </div>
+           </div>
+
     );
 }
