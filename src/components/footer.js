@@ -6,7 +6,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 import logos from './assests/assest';
 export default function Footer1() {
   return (
-    <Footer container className='mt-32 flex items-center lg:grid'>
+    <Footer container className='mt-32 flex items-center '>
       <div className="w-full bg-blue-900 ">
         <div className="grid w-full justify-between items-center sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>

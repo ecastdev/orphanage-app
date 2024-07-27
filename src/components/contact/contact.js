@@ -1,6 +1,6 @@
 import { ContactMail, Key, LocationSearchingTwoTone, SocialDistance } from "@mui/icons-material"
 import { Button, Checkbox, TextInput, Label, Select } from "flowbite-react";
-
+import { motion } from "framer-motion";
 
 
 export default function Contact(){
@@ -25,13 +25,49 @@ export default function Contact(){
         }
     ]
     return(
-    <div className="grid place-content-center mt-40  ">
-            <h1 className=" text-5xl lg:text-7xl text-rose-900 mt-5  lg:mt-10 ml-3 lg:ml-8">
+    <motion.div
+    initial={{
+               opacity: 0,
+               y: 50,
+             }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 delay: 0.6,
+               },
+             }}  className="grid place-content-center mt-40  ">
+            <motion.h1
+            initial={{
+               opacity: 0,
+               y: 50,
+             }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 delay: 0.9,
+               },
+             }}  className=" text-5xl lg:text-7xl text-rose-900 mt-5  lg:mt-10 ml-3 lg:ml-8">
                 Contact
-            </h1>
+            </motion.h1>
             <div className="flex flex-col lg:flex-row items-center mt-10 lg:mt-20 grid-flow-row place-content-center ">
             {contactData.map((Cdata , index) =>(
-                     <div key={index} className="flex gap-2">
+                     <motion.div
+                               initial={{
+                         opacity: 0,
+                         x: 50,
+                       }}
+                       whileInView={{
+                         opacity: 1,
+                         x: 0,
+                         transition: {
+                           duration: 1,
+                           delay: 0.6,
+                         },
+                       }}  key={index} className="flex gap-2">
                         <div>{Cdata.icons}</div>
                         <div className="grid max-w-96">
                                 <h5 className="text-3xl  lg:text-5xl font-bold tracking-tight text-blue-900 dark:text-white">
@@ -41,7 +77,7 @@ export default function Contact(){
                                 {Cdata.description}
                                 </p>
                         </div>
-                   </div>
+                   </motion.div>
                 ))}
             </div>
 
@@ -75,13 +111,13 @@ export default function Contact(){
                             <option>United States</option>
                             <option>Canada</option>
                             <option>France</option>
-                            <option>Germany</option>
+                            <option>Malawi</option>
                             </Select>
                  </div>
             </div>
 
 
 
-    </div>
+    </motion.div>
     )
 }

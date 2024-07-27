@@ -45,7 +45,7 @@ export default function Navbar1() {
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-16 w-16 lg:h-10 lg:w-10 mr-2" src={logos} alt="logo" />
+            <img className="h-16 w-16 lg:h-10 lg:w-80 mr-2" src={logos} alt="logo" />
             <h1 className="text-center text-white font-subt text-xs lg:text-xl ">
               Living Word of God Faith-Based Organisation
             </h1>

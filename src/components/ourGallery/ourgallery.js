@@ -1,16 +1,17 @@
 import React, { useRef } from 'react';
 import './ourgallery.css'; // Import your CSS file
-import orphan from './orphanage.jpeg';
+// import orphan from './orphanage.jpeg';
 
 import orp11 from './orp11.jpeg';
 import orp22 from './orp22.jpeg';
 import orp333 from './orp333.jpeg';
 import orph444 from './orp4.jpeg';
-
+  import { motion } from "framer-motion";
 
 export default function OurGallery() {
     const sliderListRef = useRef(null);
     const thumbnailRef = useRef(null);
+
 
     // Function for moving the slider
     const moveSlider = (direction) => {
@@ -27,7 +28,19 @@ export default function OurGallery() {
     };
 
     return (
-        <div className="slider max-w-full flex items-center lg:grid mt-60">
+        <motion.div
+        initial={{
+               opacity: 0,
+               y: 50,
+             }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 delay: 0.6,
+               },
+             }}  className="slider max-w-full flex items-center lg:grid mt-60">
             <div className="list max-w-52 grid flex flex-col items-center" ref={sliderListRef}>
                 {/* Slide items */}
                 <div className="item opacity-3">
@@ -109,7 +122,7 @@ export default function OurGallery() {
                 </button>
             </div>
            </div>
-           </div>
+           </motion.div>
 
     );
 }

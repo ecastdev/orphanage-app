@@ -1,4 +1,5 @@
 import { EmojiPeopleTwoTone, MotionPhotosOffSharp, PushPinRounded, ViewSidebarTwoTone } from "@mui/icons-material"
+import { motion } from "framer-motion";
 
 export default function OurMission(){
     const missionData = [
@@ -35,12 +36,49 @@ export default function OurMission(){
     ]
     return(
         <div className="flex flex-col h-screen items-center h-screen mt-96 lg:mt-96">
-            <h1 className="text-blue-950 text-center text-3xl lg:text-7xl font-bold">
+            <motion.h1
+            initial={{
+               opacity: 0,
+               y: 50,
+             }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 delay: 0.6,
+               },
+             }}
+             className="text-blue-950 text-center text-3xl lg:text-7xl font-bold">
                 Our Activity
-            </h1>
-            <div className="mt-2 lg:mt-9 grid grid-cols-2 lg:grid-cols-3 lg:gap-9">
+            </motion.h1>
+            <motion.div
+            initial={{
+               opacity: 0,
+               y: 50,
+             }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 delay: 0.9,
+               },
+             }}  className="mt-2 lg:mt-9 grid grid-cols-2 lg:grid-cols-3 lg:gap-9">
                         {missionData.map((activi, index) => (
-                          <div key={index} className="grid mt-10 lg:mt-20">
+                          <motion.div
+                          initial={{
+                             opacity: 0,
+                             x: 50,
+                           }}
+                           whileInView={{
+                             opacity: 1,
+                             x: 0,
+                             transition: {
+                               duration: 1,
+                               delay: 1.3,
+                             },
+                           }}  key={index} className="grid mt-10 lg:mt-20">
                                 <h1>
                                     {activi.icon || "Default Icon"}
                                 </h1>
@@ -50,11 +88,11 @@ export default function OurMission(){
                                 <p className="text-sm font-light text-center">
                                     {activi.content || "Default Content"}
                                 </p>
-                          </div>
+                          </motion.div>
             ))}
 
 
-            </div>
+            </motion.div>
 
         </div>
     )
