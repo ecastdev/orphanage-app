@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/orphanage-app/static/css/main.3b1655f1.css",
+    "main.js": "/orphanage-app/static/js/main.05f70d7e.js",
+    "static/js/453.fc964538.chunk.js": "/orphanage-app/static/js/453.fc964538.chunk.js",
+    "static/media/lt.png": "/orphanage-app/static/media/lt.c82a7c3b8472c1d2f3a9.png",
+    "static/media/orp11.jpeg": "/orphanage-app/static/media/orp11.52d3cceb702cf2520bd3.jpeg",
+    "static/media/orp333.jpeg": "/orphanage-app/static/media/orp333.8c5560392b22c4caf2a6.jpeg",
+    "static/media/orp22.jpeg": "/orphanage-app/static/media/orp22.9eea7ad9354ffe8a8850.jpeg",
+    "static/media/orp4.jpeg": "/orphanage-app/static/media/orp4.c0466eab74f960e565b8.jpeg",
+    "index.html": "/orphanage-app/index.html",
+    "main.3b1655f1.css.map": "/orphanage-app/static/css/main.3b1655f1.css.map",
+    "main.05f70d7e.js.map": "/orphanage-app/static/js/main.05f70d7e.js.map",
+    "453.fc964538.chunk.js.map": "/orphanage-app/static/js/453.fc964538.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b1655f1.css",
+    "static/js/main.05f70d7e.js"
+  ]
+}
