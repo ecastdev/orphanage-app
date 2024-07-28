@@ -25,8 +25,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -49,6 +50,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.6"
+    "@vitejs/plugin-react": "^4.3.1",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.5"
   }
 }
